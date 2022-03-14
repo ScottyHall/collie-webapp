@@ -1,0 +1,16 @@
+
+<div>
+    <div>{{ title }} this app is so lame so far! {{sliderValue}}</div>
+
+    <mat-slider class="data-slider"
+        thumbLabel
+        [displayWith]="formatLabel"
+        tickInterval="1000"
+        step="1000"
+        min="0"
+        max="100000"
+        value={{sliderValue}}
+        (input)="sliderChange($event)"
+        aria-label="units">
+    </mat-slider>
+</div>
